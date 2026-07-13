@@ -132,6 +132,11 @@ export default function BoutiqueHome({
   const [careExpanded, setCareExpanded] = useState<boolean>(false);
   const [zoomOrigin, setZoomOrigin] = useState<string>('center center');
 
+  // Reset active image index when selected product changes to prevent out-of-bounds rendering
+  useEffect(() => {
+    setActiveImage(0);
+  }, [selectedProduct]);
+
   // Customer Reviews
   const [reviews, setReviews] = useState([
     {
