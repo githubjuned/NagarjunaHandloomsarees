@@ -11,23 +11,20 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
+// Highly elegant, handloom-saree women-related photos on Unsplash
 const images = {
   'saree1.jpg': 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
   'saree2.jpg': 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
   'saree3.jpg': 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
   'saree4.jpg': 'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
-  'saree5.jpg': 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
-  'hero_bg.jpg': 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1600&q=80',
-  'owner_profile.jpg': 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-  'user_avatar.jpg': 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'
+  'saree5.jpg': 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=800&q=80',
+  'hero_bg.jpg': 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&h=900&q=80',
+  'owner_profile.jpg': 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=300&q=80',
+  'user_avatar.jpg': 'https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=300&q=80'
 };
 
 function download(filename, url) {
   const dest = path.join(dir, filename);
-  if (fs.existsSync(dest) && fs.statSync(dest).size > 1024) {
-    console.log(`${filename} already exists with content, skipping download.`);
-    return;
-  }
   
   console.log(`Downloading ${filename} from source...`);
   const file = fs.createWriteStream(dest);
