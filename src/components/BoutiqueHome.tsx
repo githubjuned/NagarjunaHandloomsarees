@@ -765,7 +765,7 @@ export default function BoutiqueHome({
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/15 transition-colors z-10" />
                       <img 
                         className="w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-105" 
-                        src="https://images.unsplash.com/photo-1590156221122-c748c78f2a41?auto=format&fit=crop&w=800&q=80"
+                        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
                         alt="New Arrivals"
                         referrerPolicy="no-referrer"
                       />
@@ -2903,7 +2903,7 @@ export default function BoutiqueHome({
 
                     {/* WhatsApp Direct Inquiry Button */}
                     <a 
-                      href={`https://wa.me/919550095442?text=${encodeURIComponent(
+                      href={`https://wa.me/918074400697?text=${encodeURIComponent(
                         `Namaste! I am interested in purchasing/inquiring about the "${selectedProduct.name}" (SKU: ${selectedProduct.sku}) priced at ₹${(selectedProduct.price ?? 0).toLocaleString('en-IN')}. Please guide me with availability and customization options.`
                       )}`}
                       target="_blank"
@@ -3488,7 +3488,7 @@ export default function BoutiqueHome({
             </p>
             <div className="space-y-2 pt-2">
               <a 
-                href="https://wa.me/919550095442" 
+                href="https://wa.me/918074400697" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-sans text-xs font-bold uppercase tracking-widest transition-colors duration-200"
@@ -3499,11 +3499,11 @@ export default function BoutiqueHome({
                 WhatsApp Us
               </a>
               <a 
-                href="tel:+919550095442" 
+                href="tel:+918074400697" 
                 className="flex items-center gap-2 text-primary hover:text-primary-container font-sans text-xs font-bold uppercase tracking-widest transition-colors duration-200"
               >
                 <Phone className="w-4 h-4 text-tertiary" />
-                +91 95500 95442
+                +91 80744 00697
               </a>
             </div>
           </div>
@@ -3771,7 +3771,7 @@ export default function BoutiqueHome({
       {/* Floating WhatsApp Button */}
       <a 
         className="fixed bottom-24 right-6 md:bottom-12 md:right-12 z-50 group flex items-center" 
-        href={`https://wa.me/919550095442?text=${encodeURIComponent("Namaste! I am visiting your Sri Padma Handloom Saree Store online boutique and would like to inquire about your heritage collections.")}`} 
+        href={`https://wa.me/918074400697?text=${encodeURIComponent("Namaste! I am visiting your Sri Padma Handloom Saree Store online boutique and would like to inquire about your heritage collections.")}`} 
         target="_blank" 
         rel="noopener noreferrer"
         id="whatsapp_floating_button"
