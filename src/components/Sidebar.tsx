@@ -133,7 +133,7 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, onViewStore
             <div className="mt-auto p-4 flex items-center gap-3 bg-surface-container-low rounded-xl border border-outline-variant/40">
               <img 
                 className="w-10 h-10 rounded-full object-cover border-2 border-primary" 
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" 
+                src="/images/owner_profile.jpg" 
                 alt="Padma Admin profile"
                 referrerPolicy="no-referrer"
               />
@@ -207,7 +207,7 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, onViewStore
         <div className="mt-auto p-4 flex items-center gap-3 bg-surface-container-low rounded-xl border border-outline-variant/40">
           <img 
             className="w-10 h-10 rounded-full object-cover border-2 border-primary" 
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" 
+            src="/images/owner_profile.jpg" 
             alt="Padma Admin profile"
             referrerPolicy="no-referrer"
           />

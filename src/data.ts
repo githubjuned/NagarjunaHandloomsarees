@@ -9,7 +9,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'IN STOCK',
     available: 42,
     specs: 'Pure Silk • 100 Count',
-    imageUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/saree1.jpg',
     threshold: 10,
     price: 14500
   },
@@ -21,7 +21,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'LOW STOCK',
     available: 3,
     specs: 'Silk-Cotton Blend',
-    imageUrl: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/saree2.jpg',
     threshold: 5,
     price: 22800
   },
@@ -33,7 +33,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'OUT OF STOCK',
     available: 0,
     specs: 'Pure Handloom Silk',
-    imageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/saree3.jpg',
     threshold: 8,
     price: 18200
   },
@@ -45,7 +45,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'IN STOCK',
     available: 28,
     specs: 'Minimalist Silver Border',
-    imageUrl: 'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/saree4.jpg',
     threshold: 5,
     price: 9900
   }

@@ -122,7 +122,7 @@ export default function BoutiqueHome({
     status: 'IN STOCK',
     available: 12,
     specs: 'Traditional Temple Border | 5.5 Meters',
-    imageUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/saree1.jpg',
     threshold: 5,
     price: 32500
   });
@@ -663,7 +663,7 @@ export default function BoutiqueHome({
                 <div 
                   className="w-full h-full bg-cover bg-center transition-transform duration-[12000ms] scale-100 hover:scale-105" 
                   style={{ 
-                    backgroundImage: "url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1600&q=80')" 
+                    backgroundImage: "url('/images/hero_bg.jpg')" 
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50" />
@@ -721,7 +721,7 @@ export default function BoutiqueHome({
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/25 transition-colors z-10" />
                     <img 
                       className="w-full h-full object-cover transition-transform duration-[6000ms] group-hover:scale-105" 
-                      src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"
+                      src="/images/saree1.jpg"
                       alt="Festival Collection"
                       referrerPolicy="no-referrer"
                     />
@@ -745,7 +745,7 @@ export default function BoutiqueHome({
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/15 transition-colors z-10" />
                       <img 
                         className="w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-105" 
-                        src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
+                        src="/images/saree5.jpg"
                         alt="Best Sellers"
                         referrerPolicy="no-referrer"
                       />
@@ -765,7 +765,7 @@ export default function BoutiqueHome({
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/15 transition-colors z-10" />
                       <img 
                         className="w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-105" 
-                        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
+                        src="/images/saree3.jpg"
                         alt="New Arrivals"
                         referrerPolicy="no-referrer"
                       />
@@ -1944,7 +1944,7 @@ export default function BoutiqueHome({
                         <div className="w-24 h-32 flex-shrink-0 bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30">
                           <img 
                             className="w-full h-full object-cover" 
-                            src={item.imageUrl || "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"}
+                            src={item.imageUrl || "/images/saree1.jpg"}
                             alt={item.name}
                             referrerPolicy="no-referrer"
                           />
@@ -1976,7 +1976,7 @@ export default function BoutiqueHome({
                       <div className="w-24 h-32 flex-shrink-0 bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30">
                         <img 
                           className="w-full h-full object-cover" 
-                          src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"
+                          src="/images/saree1.jpg"
                           alt="Midnight Blue Pure Silk Gadwal"
                           referrerPolicy="no-referrer"
                         />
@@ -2568,7 +2568,7 @@ export default function BoutiqueHome({
                             <div className="w-16 h-22 flex-shrink-0 bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20">
                               <img 
                                 className="w-full h-full object-cover" 
-                                src={item.imageUrl || "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"}
+                                src={item.imageUrl || "/images/saree1.jpg"}
                                 alt={item.name}
                                 referrerPolicy="no-referrer"
                               />
@@ -2657,18 +2657,18 @@ export default function BoutiqueHome({
           const getSelectedProductImages = (item: InventoryItem) => {
             if (item.id === 'default-gadwal' || item.sku === 'RG-SLK-ROY' || item.name.toLowerCase().includes('zari border') || item.name.toLowerCase().includes('gadwal silk')) {
               return [
-                'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
-                'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-                'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
-                'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
-                'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80'
+                '/images/saree1.jpg',
+                '/images/saree2.jpg',
+                '/images/saree3.jpg',
+                '/images/saree4.jpg',
+                '/images/saree5.jpg'
               ];
             }
             return [
               item.imageUrl,
-              'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-              'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
-              'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80'
+              '/images/saree2.jpg',
+              '/images/saree3.jpg',
+              '/images/saree4.jpg'
             ];
           };
 
@@ -2681,7 +2681,7 @@ export default function BoutiqueHome({
               status: 'IN STOCK',
               available: 8,
               specs: 'Symmetric Peacock Buttas | 5.5 Meters',
-              imageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
+              imageUrl: '/images/saree3.jpg',
               threshold: 2,
               price: 28900
             },
@@ -2693,7 +2693,7 @@ export default function BoutiqueHome({
               status: 'IN STOCK',
               available: 5,
               specs: 'Symmetric Temple Border | 5.5 Meters',
-              imageUrl: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
+              imageUrl: '/images/saree2.jpg',
               threshold: 1,
               price: 34200
             },
@@ -2705,7 +2705,7 @@ export default function BoutiqueHome({
               status: 'IN STOCK',
               available: 12,
               specs: 'Intricate Floral Vine Patterns | 5.5 Meters',
-              imageUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+              imageUrl: '/images/saree1.jpg',
               threshold: 3,
               price: 26500
             },
@@ -2717,7 +2717,7 @@ export default function BoutiqueHome({
               status: 'IN STOCK',
               available: 6,
               specs: 'Vibrant contrast border & body | 5.5 Meters',
-              imageUrl: 'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
+              imageUrl: '/images/saree4.jpg',
               threshold: 2,
               price: 29000
             }
@@ -3232,7 +3232,7 @@ export default function BoutiqueHome({
               <div className="bg-white p-8 md:p-12 rounded-3xl border border-outline-variant/30 shadow-lg space-y-8 max-w-md mx-auto text-center">
                 <div className="relative w-28 h-28 mx-auto">
                   <img 
-                    src={googleUser.picture || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80"} 
+                    src={googleUser.picture || "/images/user_avatar.jpg"} 
                     alt={googleUser.name} 
                     className="w-full h-full rounded-full object-cover border-4 border-primary shadow-md"
                     referrerPolicy="no-referrer"
@@ -3340,7 +3340,7 @@ export default function BoutiqueHome({
                             const mockUserData = {
                               name: "Arjun Varma",
                               email: "arjun.varma@gmail.com",
-                              picture: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
+                              picture: "/images/user_avatar.jpg"
                             };
                             setGoogleUser(mockUserData);
                             localStorage.setItem('sri_padma_google_user', JSON.stringify(mockUserData));

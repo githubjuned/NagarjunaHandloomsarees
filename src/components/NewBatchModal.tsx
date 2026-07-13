@@ -19,9 +19,9 @@ interface NewBatchModalProps {
 }
 
 const IMAGE_PRESETS = [
-  'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80'
+  '/images/saree1.jpg',
+  '/images/saree3.jpg',
+  '/images/saree2.jpg'
 ];
 
 export default function NewBatchModal({ isOpen, onClose, onSave, triggerToast }: NewBatchModalProps) {
