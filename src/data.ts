@@ -21,7 +21,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'LOW STOCK',
     available: 3,
     specs: 'Silk-Cotton Blend',
-    imageUrl: 'https://images.unsplash.com/photo-1544207240-8b1025eb7a6c?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
     threshold: 5,
     price: 22800
   },
@@ -33,7 +33,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'OUT OF STOCK',
     available: 0,
     specs: 'Pure Handloom Silk',
-    imageUrl: 'https://images.unsplash.com/photo-1590156221122-c748c78f2a41?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
     threshold: 8,
     price: 18200
   },
@@ -45,7 +45,7 @@ export const INITIAL_INVENTORY: InventoryItem[] = [
     status: 'IN STOCK',
     available: 28,
     specs: 'Minimalist Silver Border',
-    imageUrl: 'https://images.unsplash.com/photo-1502481851512-e9e2529bbbf9?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
     threshold: 5,
     price: 9900
   }

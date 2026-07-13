@@ -2659,7 +2659,7 @@ export default function BoutiqueHome({
               return [
                 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-                'https://images.unsplash.com/photo-1590156221122-c748c78f2a41?auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80'
               ];
@@ -2667,7 +2667,7 @@ export default function BoutiqueHome({
             return [
               item.imageUrl,
               'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-              'https://images.unsplash.com/photo-1590156221122-c748c78f2a41?auto=format&fit=crop&w=800&q=80',
+              'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
               'https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?auto=format&fit=crop&w=800&q=80'
             ];
           };
@@ -2681,7 +2681,7 @@ export default function BoutiqueHome({
               status: 'IN STOCK',
               available: 8,
               specs: 'Symmetric Peacock Buttas | 5.5 Meters',
-              imageUrl: 'https://images.unsplash.com/photo-1590156221122-c748c78f2a41?auto=format&fit=crop&w=800&q=80',
+              imageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
               threshold: 2,
               price: 28900
             },
