@@ -49,7 +49,27 @@ export default function App() {
   // Data State
   const [items, setItems] = useState<InventoryItem[]>(() => {
     const saved = localStorage.getItem('sri_padma_inventory_items') || localStorage.getItem('akhil_inventory_items');
-    return saved ? JSON.parse(saved) : INITIAL_INVENTORY;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved) as InventoryItem[];
+        return parsed.map(item => {
+          if (!item.imageUrl || item.imageUrl.includes('unsplash.com')) {
+            const matched = INITIAL_INVENTORY.find(i => i.id === item.id || i.sku === item.sku);
+            if (matched) {
+              item.imageUrl = matched.imageUrl;
+            } else {
+              const idNum = parseInt(item.id) || 1;
+              const imgIndex = ((idNum - 1) % 5) + 1;
+              item.imageUrl = `/images/saree${imgIndex}.jpg`;
+            }
+          }
+          return item;
+        });
+      } catch (e) {
+        return INITIAL_INVENTORY;
+      }
+    }
+    return INITIAL_INVENTORY;
   });
 
   const [logs, setLogs] = useState<ActivityLogEntry[]>(() => {

@@ -2655,21 +2655,21 @@ export default function BoutiqueHome({
         {/* ==================== TAB 7: PRODUCT DETAIL PAGE ==================== */}
         {currentTab === 'product-detail' && (() => {
           const getSelectedProductImages = (item: InventoryItem) => {
-            if (item.id === 'default-gadwal' || item.sku === 'RG-SLK-ROY' || item.name.toLowerCase().includes('zari border') || item.name.toLowerCase().includes('gadwal silk')) {
-              return [
-                '/images/saree1.jpg',
-                '/images/saree2.jpg',
-                '/images/saree3.jpg',
-                '/images/saree4.jpg',
-                '/images/saree5.jpg'
-              ];
+            let img = item.imageUrl || '/images/saree1.jpg';
+            if (img.includes('unsplash.com')) {
+              if (item.id === 'default-gadwal' || item.sku === 'RG-SLK-ROY' || item.name.toLowerCase().includes('zari border') || item.name.toLowerCase().includes('gadwal silk')) {
+                img = '/images/saree1.jpg';
+              } else if (item.id === '2' || item.sku === 'GAD-2024-002' || item.name.toLowerCase().includes('heritage') || item.name.toLowerCase().includes('ivory')) {
+                img = '/images/saree2.jpg';
+              } else if (item.id === '3' || item.sku === 'GAD-2024-003' || item.name.toLowerCase().includes('peacock') || item.name.toLowerCase().includes('bloom')) {
+                img = '/images/saree3.jpg';
+              } else if (item.id === '4' || item.sku === 'GAD-2024-004' || item.name.toLowerCase().includes('silver') || item.name.toLowerCase().includes('monochrome')) {
+                img = '/images/saree4.jpg';
+              } else {
+                img = '/images/saree1.jpg';
+              }
             }
-            return [
-              item.imageUrl,
-              '/images/saree2.jpg',
-              '/images/saree3.jpg',
-              '/images/saree4.jpg'
-            ];
+            return [img];
           };
 
           const relatedSarees: InventoryItem[] = [
