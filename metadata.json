@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Sri Padma Handloom Saree Store Admin Dashboard",
+  "description": "An elegant, highly-polished admin inventory management and stock control dashboard for Sri Padma Handloom Saree Store's Gadwal artisan handloom sarees.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
